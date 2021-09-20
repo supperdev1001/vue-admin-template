@@ -2,7 +2,7 @@
   <div class="c-app">
     <TheSidebar/>
     <CWrapper>
-      <TheHeader/>
+      <!-- <TheHeader/> -->
       <div class="c-body">
         <main class="c-main">
           <CContainer fluid>
@@ -12,7 +12,7 @@
           </CContainer>
         </main>
       </div>
-      <TheFooter/>
+      <!-- <TheFooter/> -->
     </CWrapper>
   </div>
 </template>

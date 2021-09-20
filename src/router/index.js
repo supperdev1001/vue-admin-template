@@ -7,6 +7,8 @@ const TheContainer = () => import('@/containers/TheContainer')
 // Views
 const Dashboard = () => import('@/views/Dashboard')
 
+const NewDashboard = () => import('@/views/navigation/NewDashboard')
+
 const Colors = () => import('@/views/theme/Colors')
 const Typography = () => import('@/views/theme/Typography')
 
@@ -74,6 +76,21 @@ function configRoutes () {
       name: 'Home',
       component: TheContainer,
       children: [
+        {
+          path: 'navigation',
+          redirect: '/navigation/dashboard',
+          name: 'Navigation',
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: 'dashboard',
+              name: 'Dashboard',
+              component: NewDashboard
+            }
+          ]
+        },
         {
           path: 'dashboard',
           name: 'Dashboard',

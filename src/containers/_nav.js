@@ -3,6 +3,16 @@ export default [
     _name: 'CSidebarNav',
     _children: [
       {
+        _name: 'CSidebarNavTitle',
+        _children: ['Navigation']
+      },
+      {
+        _name: 'CSidebarNavItem',
+        name: 'Dashboard',
+        to: '/navigation/dashboard',
+        icon: 'cib-microsoft'
+      },
+      {
         _name: 'CSidebarNavItem',
         name: 'Dashboard',
         to: '/dashboard',
@@ -221,22 +231,22 @@ export default [
           }
         ]
       },
-      {
-        _name: 'CSidebarNavItem',
-        name: 'Download CoreUI',
-        href: 'http://coreui.io/vue/',
-        icon: { name: 'cil-cloud-download', class: 'text-white' },
-        _class: 'bg-success text-white',
-        target: '_blank'
-      },
-      {
-        _name: 'CSidebarNavItem',
-        name: 'Try CoreUI PRO',
-        href: 'http://coreui.io/pro/vue/',
-        icon: { name: 'cil-layers', class: 'text-white' },
-        _class: 'bg-danger text-white',
-        target: '_blank'
-      }
+      // {
+      //   _name: 'CSidebarNavItem',
+      //   name: 'Download CoreUI',
+      //   href: 'http://coreui.io/vue/',
+      //   icon: { name: 'cil-cloud-download', class: 'text-white' },
+      //   _class: 'bg-success text-white',
+      //   target: '_blank'
+      // },
+      // {
+      //   _name: 'CSidebarNavItem',
+      //   name: 'Try CoreUI PRO',
+      //   href: 'http://coreui.io/pro/vue/',
+      //   icon: { name: 'cil-layers', class: 'text-white' },
+      //   _class: 'bg-danger text-white',
+      //   target: '_blank'
+      // }
     ]
   }
 ]
